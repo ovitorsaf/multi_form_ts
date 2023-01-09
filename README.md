@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+## Pacotes instalados
+- styled-components (com types)
+- react-router-dom (com types)
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
