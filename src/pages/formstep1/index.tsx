@@ -8,6 +8,7 @@ export const FormStep1 = () => {
 
     const handleNextStep = () => {
         navigate('/step2');
+        console.log('step 2');
     }
     
     return(
