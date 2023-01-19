@@ -40,6 +40,7 @@ export enum FormActions {
     setName,
     setEmail,
     setGitHub,
+    setLevel,
 }
 
 const formReducer = (state: State, action: Action) => {
@@ -52,6 +53,8 @@ const formReducer = (state: State, action: Action) => {
             return {...state, email: action.payload};
         case FormActions.setGitHub:
             return {...state, github: action.payload};
+        case FormActions.setLevel:
+            return {...state, level: action.payload};    
         default:
             return state;
     };
