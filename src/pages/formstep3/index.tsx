@@ -4,7 +4,6 @@ import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
 import { ChangeEvent, useEffect } from 'react';
 import { BackButton } from '../../components/backbutton';
-import { stat } from 'fs';
 
 export const FormStep3 = () => {
     
@@ -24,7 +23,7 @@ export const FormStep3 = () => {
 
     const handleSend = () => {
         if (state.email !== "" && state.github !== ""){
-            console.log(state);     
+            navigate('/step4');     
         } else {
             alert("Preencha todos os dados!");
         }
@@ -74,7 +73,7 @@ export const FormStep3 = () => {
                 </label>
 
                 <BackButton step={state.currentStep} value="Voltar" onClick={handleBackStep}/>
-                <button className='btnNext' onClick={handleSend}>Finalizar Cadastro</button>
+                <button className='btnNext' onClick={handleSend}>Enviar</button>
             </C.Container>
         </Theme>
         
