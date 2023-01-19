@@ -2,7 +2,7 @@ import { Theme } from '../../components';
 import * as C from './styles' ; 
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
-import { ChangeEvent, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BackButton } from '../../components/backbutton';
 import { ProfileInfo } from '../../components/profileinfo';
 import { ProfileLevel } from '../../components/profilelevel';
