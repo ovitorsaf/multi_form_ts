@@ -37,7 +37,7 @@ export const Container = styled.div`
         }
     }
 
-    button {
+    .btnNext {
         background-color: #25cd89;
         color: #fff; 
         font-size: 14px;
