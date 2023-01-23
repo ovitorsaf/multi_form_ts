@@ -3,7 +3,8 @@ import * as C from './styles' ;
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
 import { ChangeEvent, useEffect } from 'react';
-import { BackButton } from '../../components/backbutton';
+import { BackButton } from '../../components/buttonback';
+import { ButtonNext } from '../../components/buttonnext';
 
 export const FormStep3 = () => {
     
@@ -73,7 +74,7 @@ export const FormStep3 = () => {
                 </label>
 
                 <BackButton step={state.currentStep} value="Voltar" onClick={handleBackStep}/>
-                <button className='btnNext' onClick={handleSend}>Enviar</button>
+                <ButtonNext step={state.currentStep} value="Enviar" onClick={handleSend}/>
             </C.Container>
         </Theme>
         

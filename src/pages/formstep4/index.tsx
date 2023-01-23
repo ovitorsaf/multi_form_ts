@@ -3,10 +3,11 @@ import * as C from './styles' ;
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { BackButton } from '../../components/backbutton';
+import { BackButton } from '../../components/buttonback';
 import { ProfileInfo } from '../../components/profileinfo';
 import { ProfileLevel } from '../../components/profilelevel';
 import { SideBarItem } from '../../components/sidebaritem';
+import { ButtonNext } from '../../components/buttonnext';
 
 
 export const FormStep4 = () => {
@@ -64,7 +65,7 @@ export const FormStep4 = () => {
                 <ProfileInfo placeholder='Github' value={state.github}/>
                 
                 <BackButton step={state.currentStep} value="Voltar" onClick={handleBackStep}/>
-                <button className='btnNext' onClick={handleSave}>Finalizar Cadastro</button>
+                <ButtonNext step={state.currentStep} value="Finalizar Cadastro" onClick={handleSave}/>
             </C.Container>
         </Theme>
         

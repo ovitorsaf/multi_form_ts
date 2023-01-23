@@ -1,10 +1,11 @@
 import { Theme } from '../../components/theme/';
+import { ButtonNext } from '../../components/buttonnext';
+import { BackButton } from '../../components/buttonback';
 import * as C from './styles' ; 
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { SelectOption } from '../../components/selectoption';
-import { BackButton } from '../../components/backbutton';
 
 export const FormStep2 = () => {
     
@@ -68,7 +69,7 @@ export const FormStep2 = () => {
                 />
 
                 <BackButton step={state.currentStep} value="Voltar" onClick={handleBackStep}/>
-                <button className="btnNext" onClick={handleNextStep}>Próximo</button>
+                <ButtonNext step={state.currentStep} value="Próximo" onClick={handleNextStep}/>
             </C.Container>
         </Theme>
         

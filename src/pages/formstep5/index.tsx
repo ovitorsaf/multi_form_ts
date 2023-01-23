@@ -3,6 +3,7 @@ import * as C from './styles' ;
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import { ButtonNext } from '../../components/buttonnext';
 
 export const FormStep5 = () => {
     
@@ -42,7 +43,7 @@ export const FormStep5 = () => {
                 <h1>Perfeito {state.name}, seus dados foram salvos com sucesso.</h1>
                 <h1>Em breve você receberá futuras oportunidades :)</h1>                
                 <hr />
-                <button className='btnNext' onClick={handleInit}>Novo Cadastro</button>
+                <ButtonNext value="Novo Cadastro" onClick={handleInit}/>
             </C.Container>
         </ThemeCompleted>
         

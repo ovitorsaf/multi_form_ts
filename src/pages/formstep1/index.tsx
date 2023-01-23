@@ -1,4 +1,5 @@
 import { Theme } from '../../components';
+import { ButtonNext } from '../../components/buttonnext';
 import * as C from './styles' ; 
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
@@ -51,7 +52,7 @@ export const FormStep1 = () => {
                     />
                 </label>
 
-                <button onClick={handleNextStep}>Próximo</button>
+                <ButtonNext onClick={handleNextStep} value="Próximo" step={state.currentStep}/>
             </C.Container>
         </Theme>
         
