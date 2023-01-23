@@ -51,7 +51,7 @@ export const FormStep3 = () => {
     return(
         <Theme>
             <C.Container>
-                <p>Passo 3/3</p>
+                <p>Passo 3/4</p>
                 <h1>Legal {state.name}, onde podemos te encontrar?</h1>
                 <p>Preencha o campo abaixo com seu nome completo.</p>
                 <hr />

@@ -16,7 +16,7 @@ export const Container = styled.div`
         height: 1px;
         border: 0px;
         background-color: #16195c;
-        margin: 15px 0;
+        margin: 30px 0;
     }
 
     label {
@@ -49,10 +49,6 @@ export const Container = styled.div`
         border-radius: 30px;
         cursor: pointer;
         margin-top: 30px;
-
-        &:hover{
-            background-color: #50d7a0;
-        }
     }
 
     .backButton {

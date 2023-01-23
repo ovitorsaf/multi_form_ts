@@ -2,16 +2,19 @@ import { Theme } from '../../components';
 import * as C from './styles' ; 
 import { useForm, FormActions } from '../../contexts/FormContext';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BackButton } from '../../components/backbutton';
 import { ProfileInfo } from '../../components/profileinfo';
 import { ProfileLevel } from '../../components/profilelevel';
+import { SideBarItem } from '../../components/sidebaritem';
 
 
 export const FormStep4 = () => {
     
     const navigate = useNavigate();
     const { state, dispatch } = useForm();
+    
+    const [sideBar, setSideBar] = useState(false);
 
     useEffect(() => {
         if (state.name === ""){
@@ -26,7 +29,8 @@ export const FormStep4 = () => {
 
     const handleSave= () => {
         if (state.email !== "" && state.github !== ""){
-            console.log(state);     
+            console.log(state);
+            navigate('/completed');
         } else {
             alert("Preencha todos os dados!");
         }
@@ -49,7 +53,7 @@ export const FormStep4 = () => {
     return(
         <Theme>
             <C.Container>
-                <p>Resumo</p>
+                <p>Passo 4/4</p>
                 <h1>Verifique se está tudo certo?</h1>
                 <p>Revise suas informações para finalizar o cadastro.</p>
                 <hr />

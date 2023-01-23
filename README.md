@@ -1,6 +1,18 @@
+## O que é esse projeto?
+Projeto de estudo utilizando React com Typescript de um form de Cadastro de Desenvolvedor em 5 etapas, sendo elas:
+- Dados pessoais
+- Dados profissionais
+- Contatos Pessoais
+- Revisão
+- Form Completo
+
+Os dados são compartilhados entre as etapas via Context, possui validação dos dados para que o prospect não avance as etapas sem ter preenchido as anteriores.
+
+Possui também Sidebar onde é mostrado em que etapa o prospect está dentro do form.
+
 ## Pacotes instalados
-- styled-components (com types)
-- react-router-dom (com types)
+- styled-components
+- react-router-dom
 
 ### Getting Started with Create React App
 

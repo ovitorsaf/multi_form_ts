@@ -13,6 +13,7 @@ export const Theme = ({children}: Props) => {
     const { state } = useForm();
     
     return(
+        
         <C.Container>
             <C.Area>
                 <Header />
